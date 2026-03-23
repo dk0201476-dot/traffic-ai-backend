@@ -1,0 +1,9 @@
+flask
+flask-cors
+python-dotenv
+requests
+tensorflow
+opencv-python-headless
+numpy
+pydantic
+gunicorn
