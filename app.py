@@ -21,7 +21,7 @@ INSFORGE_URL = os.environ.get("NEXT_PUBLIC_INSFORGE_BASE_URL", "https://ugs77rez
 INSFORGE_KEY = os.environ.get("NEXT_PUBLIC_INSFORGE_ANON_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3OC0xMjM0LTU2NzgtOTBhYi1jZGVmMTIzNDU2NzgiLCJlbWFpbCI6ImFub25AaW5zZm9yZ2UuY29tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQyNTIyNDd9.p18_5D5QQWpKjG13fBYglhoo2alyRauAiCohnXFlYrM")
 
 # Load model
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "traffic_model.h5")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "traffic_model.keras")
 model = None
 MODEL_ERROR_MSG = "Model could not be loaded"
 
