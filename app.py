@@ -1,10 +1,20 @@
 import os
 import cv2
 import numpy as np
+import json
 import base64
 import requests
+import tensorflow as tf
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+
+# Aggressive CPU/Memory limits for free tier servers
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["TF_NUM_INTRAOP_THREADS"] = "1"
+os.environ["TF_NUM_INTEROP_THREADS"] = "1"
+tf.config.threading.set_inter_op_parallelism_threads(1)
+tf.config.threading.set_intra_op_parallelism_threads(1)
+
 from tensorflow.keras.models import load_model
 from dotenv import load_dotenv
 

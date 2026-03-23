@@ -17,7 +17,7 @@ Your backend is fully prepared for a production cloud deployment. All dependenci
    - Name: `traffic-ai-backend` (or whatever you want)
    - Runtime: `Python 3`
    - Build Command: `pip install -r requirements.txt`
-   - Start Command: `gunicorn app:app`
+   - Start Command: `gunicorn app:app --workers 1 --threads 1 --timeout 120`
 
 4. **Environment Variables:**
    - Scroll down to "Environment Variables" and click "Add from .env".
