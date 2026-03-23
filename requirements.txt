@@ -2,7 +2,7 @@ flask
 flask-cors
 python-dotenv
 requests
-tensorflow
+tensorflow-cpu
 opencv-python-headless
 numpy
 pydantic
